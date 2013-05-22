@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+var path   = process.argv[2] || process.cwd(),
+
+    port   = process.argv[3] || 8080,
+
+    server = require('../src/server');
+
+
+// temporary harcode
+path = '../../../01-Data-Handling/';
+
+
+server.run( path, port );
