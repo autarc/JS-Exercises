@@ -1,0 +1,44 @@
+{
+    "Starcraft" :  {
+
+        "genre" : "Strategy",
+        "time"  : "40"
+    },
+
+    "Bioshok" : {
+
+        "genre" : "Action-Shooter",
+        "time"  : "25"
+    },
+
+    "Civilization" : {
+
+        "genre" : "Strategy",
+        "time"  : "-60",
+    },
+
+    "Baldurs Gate" : {
+
+        "genre" : "RPG",
+        "time"  : "150"
+    },
+
+    "Deus Ex" : {
+
+        "genre" : "Action-RPG",
+        "time"  : "80",
+    },
+
+    "Super Mario" : {
+
+      "genre" : "Jump & Run",
+      "time"  : "50"
+    },
+
+    "Zelda" : {
+
+        "genre" : "Adventure",
+        "time"  : "70"
+    }
+
+}
