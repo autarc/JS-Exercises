@@ -80,21 +80,33 @@ function init ( root, port ) {
 
           if ( err ) throw err;
 
+          res.writeHead( 200, { 'Content-Type': 'text/html' });
+
+
+          /** serve index file **/
+          if ( files.indexOf('index.html') >= 0 ) {
+
+            return fs.createReadStream( filename + 'index.html' ).pipe( res );
+          }
+
+
+          /** provide a overview list **/
+
           var list = files.map( function ( file ) {
 
             return '<li><a href="' + uri + file + '">'+ file +'</a></li>';
 
           }).join('<br>');
 
-          res.writeHead( 200, { 'Content-Type': 'text/html' });
           res.write( defaultCSS + '<ul>' + list + '</ul>' );
+
           res.end();
         });
 
         return;
       }
 
-      // Not Found
+      /**  Error - not found **/
       res.writeHead( 404, { 'Content-Type': 'text/html' });
       res.write( defaultCSS + '<h2>File not found !</h2>');
       res.end();
