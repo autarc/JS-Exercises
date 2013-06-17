@@ -1,14 +1,23 @@
 #!/usr/bin/env node
 
-var path   = process.argv[2] || process.cwd(),
+var select = process.argv[2] ||    0,
 
     port   = process.argv[3] || 8080,
 
     server = require('../src/server');
 
 
-// temporary harcode
-path = '../../../01-Data-Handling/';
+/** Challenges **/
 
+var tasks = [
+
+  '01-Data-Handling',
+  '02-Text-Processing',
+  '03-DOM-Manipulation',
+  '04-Canvas-Visualization'
+];
+
+
+var path = '../../../' + tasks[ select ]; // process.cwd(),
 
 server.run( path, port );
