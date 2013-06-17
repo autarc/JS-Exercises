@@ -1,44 +1,43 @@
 {
-    "Starcraft" :  {
+  "Starcraft" :  {
 
-        "genre" : "Strategy",
-        "time"  : "40"
-    },
+      "genre" : "Strategy",
+      "time"  : "40"
+  },
 
-    "Bioshok" : {
+  "Bioshok" : {
 
-        "genre" : "Action-Shooter",
-        "time"  : "25"
-    },
+      "genre" : "Action-Shooter",
+      "time"  : "25"
+  },
 
-    "Civilization" : {
+  "Civilization" : {
 
-        "genre" : "Strategy",
-        "time"  : "-60",
-    },
+      "genre" : "Strategy",
+      "time"  : "-60",
+  },
 
-    "Baldurs Gate" : {
+  "Baldurs Gate" : {
 
-        "genre" : "RPG",
-        "time"  : "150"
-    },
+      "genre" : "RPG",
+      "time"  : "150"
+  },
 
-    "Deus Ex" : {
+  "Deus Ex" : {
 
-        "genre" : "Action-RPG",
-        "time"  : "80",
-    },
+      "genre" : "Action-RPG",
+      "time"  : "80",
+  },
 
-    "Super Mario" : {
+  "Super Mario" : {
 
-      "genre" : "Jump & Run",
-      "time"  : "50"
-    },
+    "genre" : "Jump & Run",
+    "time"  : "50"
+  },
 
-    "Zelda" : {
+  "Zelda" : {
 
-        "genre" : "Adventure",
-        "time"  : "70"
-    }
-
+      "genre" : "Adventure",
+      "time"  : "70"
+  }
 }

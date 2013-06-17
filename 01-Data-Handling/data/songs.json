@@ -1,31 +1,30 @@
 {
-    "Just Give Me A Reason": {
+  "Just Give Me A Reason": {
 
-        "artist": "Pink",
-        "time"  : "20"
-    },
+      "artist": "Pink",
+      "time"  : "20"
+  },
 
-    "Scream and Shout" : {
+  "Scream and Shout" : {
 
-        "artist": "Wil.I.Am & Britney Spears",
-        "time"  : "3"
-    },
+      "artist": "Wil.I.Am & Britney Spears",
+      "time"  : "3"
+  },
 
-    "Call Me Maybe" : {
+  "Call Me Maybe" : {
 
-        "artist" : "Carly Rae Jepsen",
-        "time"   : "42"
-    },
+      "artist" : "Carly Rae Jepsen",
+      "time"   : "42"
+  },
 
-    "Thriller" : {
+  "Thriller" : {
 
-        "artist" : "Michael Jackson"
-    },
+      "artist" : "Michael Jackson"
+  },
 
-    "Gangam Style" : {
+  "Gangam Style" : {
 
-        "artist" : "Psy",
-        "time"   : "100"
-    }
-
+      "artist" : "Psy",
+      "time"   : "100"
+  }
 }
