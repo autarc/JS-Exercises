@@ -2,7 +2,7 @@
 
 var select = process.argv[2] ||    0,
 
-    port   = process.argv[3] || 8080,
+    port   = process.argv[3] || 2020,
 
     server = require('../src/server');
 
