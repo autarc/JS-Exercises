@@ -1,5 +1,5 @@
 {
-  "Starcraft" :  {
+  "Starcraft" : {
 
       "genre" : "Strategy",
       "time"  : "40"
@@ -14,7 +14,7 @@
   "Civilization" : {
 
       "genre" : "Strategy",
-      "time"  : "-60",
+      "time"  : "60"
   },
 
   "Baldurs Gate" : {
@@ -26,7 +26,7 @@
   "Deus Ex" : {
 
       "genre" : "Action-RPG",
-      "time"  : "80",
+      "time"  : "80"
   },
 
   "Super Mario" : {

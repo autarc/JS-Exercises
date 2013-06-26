@@ -5,7 +5,7 @@ Data Handling
 This exercise deals with dynamic data. Afterwards you will be able to use various 3rd party APIs.
 
 
-## Hobby-O-Meter
+## Request-Data
 
 
 
