@@ -1,8 +1,13 @@
-// ToDo:
-//
-// One default pages: title, better styling etc.
+/**
+ *  ToDo
+ *  ====
+ *
+ *  - improve styling of default pages (see title etc.)
+ *  - still got an error, as you got to a wrong site, not existing page, e.g. localhost/localhost,
+ *    -> check if the specified port is already used (e.g. skype)
+ */
 
-// Module
+// Modules
 
 var http = require('http'),
     url  = require('url'),
@@ -14,19 +19,20 @@ var http = require('http'),
 
 var mimeTypes = {
 
-  md  : 'text/plain',
+  md  : 'text/plain'      ,
 
-  html: 'text/html' ,
+  html: 'text/html'       ,
+  js  : 'text/javascript' ,
+  css : 'text/css'        ,
 
-  jpeg: 'image/jpeg',
-  jpg : 'image/jpg' ,
-  png : 'image/png' ,
+  json: 'application/json',
+  xml : 'application/xml' ,
 
-  js  : 'text/javascript',
-  css : 'text/css',
-
-  json: 'application/json'
-
+  jpeg: 'image/jpeg'      ,
+  jpg : 'image/jpg'       ,
+  png : 'image/png'       ,
+  gif : 'image/gif'       ,
+  svg : 'image/svg+xml'
 };
 
 
@@ -113,7 +119,10 @@ function init ( root, port ) {
 
     });
 
-  }).listen( port, function(){ console.log('[open] running a local server => http://localhost:8080'); });
+  }).listen( port, function(){
+
+    console.log('[open] running a local server => http://localhost:' + port );
+  });
 
 }
 
