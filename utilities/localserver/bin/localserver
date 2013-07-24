@@ -11,10 +11,16 @@ var select = process.argv[2] ||    0,
 
 var tasks = [
 
+  'custom',
+
   '01-Data-Handling',
   '02-Text-Processing',
   '03-DOM-Manipulation',
-  '04-Canvas-Visualization'
+  '04-Scroll-Effects',
+  '05-Canvas-Visualization',
+  '06-Script-Visualization',
+  '07-Canvas-Visualization',
+  '08-Canvas-Visualization'
 ];
 
 

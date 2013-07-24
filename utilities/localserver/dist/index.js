@@ -1,11 +1,10 @@
 /**
- *  ToDo
- *  ====
+ *  localserver
+ *  ===========
  *
- *  - improve styling of default pages (see title etc.)
- *  - still got an error, as you got to a wrong site, not existing page, e.g. localhost/localhost,
- *    -> check if the specified port is already used (e.g. skype)
+ *  A standalone version of a server, hosting the current directory on port: 2020
  */
+
 
 // Modules
 
@@ -38,7 +37,7 @@ var mimeTypes = {
 
 // Styling
 
-var defaultCSS = '<style>' + fs.readFileSync( __dirname + '/style.css') + '</style>';
+var defaultCSS = '<style></style>';//' + fs.readFileSync( __dirname + '/style.css') + '</style>';
 
 
 // Code
@@ -60,13 +59,15 @@ function init ( root, port ) {
       return;
     }
 
-    //
+
     if ( uri.charAt( uri.length - 1 ) !== '/' ) uri += '/';
 
 
     fs.stat( filename, function ( err, stats ) {
 
       if ( err ) throw err;
+
+      if ( err ) return showError( err );
 
       if ( stats.isFile() ) {
 
@@ -108,16 +109,21 @@ function init ( root, port ) {
 
           res.end();
         });
-
-        return;
       }
 
-      /**  Error - not found **/
+    });
+
+
+    /**  Error - File not found **/
+    function showError ( err ) {
+
       res.writeHead( 404, { 'Content-Type': 'text/html' });
       res.write( defaultCSS + '<h2>File not found !</h2>');
       res.end();
 
-    });
+      console.log('\n[MISSING] Path: "' + err.path + '"' );
+    }
+
 
   }).listen( port, function(){
 
@@ -126,4 +132,7 @@ function init ( root, port ) {
 
 }
 
-module.exports = { run: init };
+
+/** Execution **/
+
+init( process.cwd(), 2020 );
