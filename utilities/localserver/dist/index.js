@@ -65,8 +65,6 @@ function init ( root, port ) {
 
     fs.stat( filename, function ( err, stats ) {
 
-      if ( err ) throw err;
-
       if ( err ) return showError( err );
 
       if ( stats.isFile() ) {
